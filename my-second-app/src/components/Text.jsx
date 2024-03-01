@@ -1,11 +1,12 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, Button } from 'react-native';
 
 const Greeting = () => {
   return (
     <View>
         <Text style={styles.text}>Domain Expansion</Text>
         <Text style={styles.textSub}>Infinite Void</Text>
+        <Button title="Click me" color="black" onPress={() => alert('Button Clicked')} />
     </View>
   )
 }
