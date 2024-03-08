@@ -11,7 +11,7 @@ export default function App() {
       </View>
       <View style={styles.squarePositioning}>
         <Square color='lime'/>
-        <Square color='yellow'/>
+        <Square color='yellow' positionStyles={styles.positionStyles}/>
       </View>
       <StatusBar style="auto" />
     </View>
@@ -33,5 +33,13 @@ const styles = StyleSheet.create({
   },
   squarePositioning: {
     display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+
+  },
+  positionStyles: {
+    position: 'absolute',
+    top: 70,
+    left: 200,
   }
 });
